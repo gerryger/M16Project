@@ -111,7 +111,7 @@
                     <h2>Subhaus</h2>
                	 			<h3 class="animated3"> Welocome to <b>Subhaus</b></h3>
                	 			<div class="line"></div>
-               	 			<p class="animated2">Try our fingerlickin' good burgers!</p>
+               	 			<p class="animated2">Try our good burgers!</p>
                	 		</div>
            	 		</div>
            	 	</div>
@@ -198,15 +198,16 @@
                         <div class="col-md-3 col-xs-12 col-sm-6">
                                 <div class="feature_content">
                                     <!--<i class="fa fa-lightbulb-o"></i>-->
-                                    <i style="margin-left: 62.5px"><img src="images/our_services/subhaus_burger.png" class="img-responsive" height="70px" width="90px"/></i>
+                                    <i ><img src="images/our_services/subhaus_burger.png"  height="70px" width="90px"/></i>
                                     <h5>Subhaus</h5>
                                     <p>You can not ignore mobile devices anymore and with this theme all your visitors will be very pleased how they see your website.</p>
-                                    <!-- <button class="btn btn-main"> Read More</button> -->
+                                   <button class="btn btn-main"> Read More</button>
                                 </div>
                             </div>
                         <div class="col-md-3 col-xs-12 col-sm-6">
                                 <div class="feature_content">
-                                    <i class="fa fa-pencil"></i>
+                                    <!--<i class="fa fa-pencil"></i>-->
+                                    <i><img src="images/our_services/monroe_barber.png" height="70px" width="90px" /></i>
                                     <h5>Monroe</h5>
                                     <p>This theme integrates with WordPress in the most awesome way! Functionality is separated from style through uncreadble useful for user. </p>
                                     <button class="btn btn-main"> Read More</button>
@@ -214,7 +215,8 @@
                         </div> <!-- Col-md-4 Single_feature End -->
                         <div class="col-md-3 col-xs-12 col-sm-6">
                                 <div class="feature_content">
-                                    <i class="fa fa-cog"></i>
+                                   <!-- <i class="fa fa-cog"></i>-->
+                                    <i><img src="images/our_services/pitstop_waffle.png" height="70px" width="90px" /></i>
                                     <h5>Pitstop</h5>
                                     <p>Full Time support. Very much helpful and possesive at the same time. With all this in mind you won’t be outdated anytime soon. Really!! </p>
                                     <button class="btn btn-main"> Read More</button>
@@ -222,7 +224,8 @@
                         </div> <!-- Col-md-4 Single_feature End -->
                         <div class="col-md-3 col-xs-12 col-sm-6">
                                 <div class="feature_content">
-                                    <i class="fa fa-desktop"></i>
+                                    <!--<i class="fa fa-desktop"></i>-->
+                                    <i><img src="images/our_services/flux_car.png" height="70px" width="90px"/></i>
                                     <h5>Flux</h5>
                                     <p>Shadow is as optimized as it gets. No useless wrappers, no double headings, everything is coded with SEO in mind. Content is KING! </p>
                                     <button class="btn btn-main"> Read More</button>
