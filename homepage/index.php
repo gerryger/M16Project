@@ -1572,6 +1572,10 @@
         <script type="text/javascript" src="js/gmaps.js"></script>
 			 <!-- Custom js -->
         <script src="js/custom.js"></script>
+
+        <!-- jarallax-0.2.4b -->
+        <script src="js/jarallax-0.2.4b.js"></script>
+
 	     <script>
 		// Google Map - with support of gmaps.js
      var map;
