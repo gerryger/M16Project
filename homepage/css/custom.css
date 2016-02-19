@@ -195,6 +195,9 @@ a{
      padding-bottom: 130px;
      padding-top:90px;
 }
+#team{
+    background: url('../images/banner/banner.jpg')fixed 50% 50%;
+}
 section{
     /*padding:50px 0px;*/
 }

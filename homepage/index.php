@@ -1438,31 +1438,31 @@
     <div class="footer_top">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Main Menu</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#about">Home</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Useful Links</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#"> inventore natus ullam eum</a></li>
-                            <li><a href="#">consectetur adipisicing elit.</a></li>
-                            <li><a href="#">Frequently Asked Questions</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+<!--                <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--                    <h3 class="menu_head">Main Menu</h3>-->
+<!--                    <div class="footer_menu">-->
+<!--                        <ul>-->
+<!--                            <li><a href="#about">Home</a></li>-->
+<!--                            <li><a href="#service">Service</a></li>-->
+<!--                            <li><a href="#portfolio">Portfolio</a></li>-->
+<!--                            <li><a href="#blog">Blog</a></li>-->
+<!--                            <li><a href="#contact">Contact</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--                    <h3 class="menu_head">Useful Links</h3>-->
+<!--                    <div class="footer_menu">-->
+<!--                        <ul>-->
+<!--                            <li><a href="#">Terms of use</a></li>-->
+<!--                            <li><a href="#">Privacy Policy</a></li>-->
+<!--                            <li><a href="#"> inventore natus ullam eum</a></li>-->
+<!--                            <li><a href="#">consectetur adipisicing elit.</a></li>-->
+<!--                            <li><a href="#">Frequently Asked Questions</a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="col-md-12 col-sm-12 col-xs-12" style="align-items: center">
                     <h3 class="menu_head">Contact us</h3>
                     <div class="footer_menu_contact">
                         <ul>
@@ -1478,21 +1478,21 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Tags</h3>
-                    <div class="footer_menu tags">
-                        <a href="#"> Design</a>
-                        <a href="#"> User Interface</a>
-                        <a href="#"> Graphics</a>
-                        <a href="#"> Web Design</a>
-                        <a href="#"> Development</a>
-                        <a href="#"> Asp.net</a>
-                        <a href="#"> Bootstrap</a>
-                        <a href="#"> Joomla</a>
-                        <a href="#"> SEO</a>
-                        <a href="#"> Wordepress</a>
-                    </div>
-                </div>
+<!--                <div class="col-md-3 col-sm-6 col-xs-12">-->
+<!--                    <h3 class="menu_head">Tags</h3>-->
+<!--                    <div class="footer_menu tags">-->
+<!--                        <a href="#"> Design</a>-->
+<!--                        <a href="#"> User Interface</a>-->
+<!--                        <a href="#"> Graphics</a>-->
+<!--                        <a href="#"> Web Design</a>-->
+<!--                        <a href="#"> Development</a>-->
+<!--                        <a href="#"> Asp.net</a>-->
+<!--                        <a href="#"> Bootstrap</a>-->
+<!--                        <a href="#"> Joomla</a>-->
+<!--                        <a href="#"> SEO</a>-->
+<!--                        <a href="#"> Wordepress</a>-->
+<!--                    </div>-->
+<!--                </div>-->
 
             </div>
         </div>
