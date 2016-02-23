@@ -268,12 +268,14 @@ INTRO CONTAINER
     background: url('../images/beer.jpg') no-repeat center center; 
     background-size: cover;
     background-position: 70% 50%;
+    background-attachment: fixed;
 }
 
 .bread.background_content{
-    background: url('../images/bread.jpg') no-repeat center center; 
+    background: url('../images/breakfast.jpg') no-repeat center center;
     background-size: cover;
     background-position: 70% 50%;
+    background-attachment: fixed;
 }
  .featured.background_content{
     background: url('../images/featured.jpg') no-repeat center center; 
@@ -293,12 +295,12 @@ INTRO CONTAINER
     background-position: center;
     background-attachment: fixed;
 }
-.bread.background_content{
-    background: url('../images/breakfast.jpg') no-repeat center center; 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+/*.bread.background_content{*/
+    /*background: url('../images/breakfast.jpg') no-repeat center center; */
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
+/*}*/
 /*========================
 DESCRIPTION BODY CONTENT
 =========================*/
@@ -755,7 +757,15 @@ MEDIA QUERIES TABLET
         display: inline-block;
         margin: 0 auto;
         width: 325px;
-    } 
+    }
+
+    /*========================
+    Subhaus IG
+    =========================*/
+    section.subhaus_ig {
+        height: 300px;
+
+    }
 
 } /*END OF MEDIA QUERY*/
 
@@ -1012,7 +1022,7 @@ MEDIA QUERIE DESKTOP
     height: 40px
 }
 .overlay-slide{
-    height: 850px;
+    height: 700px;
     position: relative;
     width: 100%;
 }
