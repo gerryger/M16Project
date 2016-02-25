@@ -2,9 +2,191 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8bf2692-11a4-4d0c-b9d1-ddda552409e3" name="Default" comment="">
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Restaurant-master/css/main.css" afterPath="$PROJECT_DIR$/Restaurant-master/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Restaurant-master/index.html" afterPath="$PROJECT_DIR$/Restaurant-master/index.html" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fwdlogo.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fwdlogo/LOGO M16 FIX 3-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fwdlogo/NEON BOX PITSTOP FIX-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fwdlogo/flux.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fwdlogo/m16_logo_navbar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fwdlogo/subhaus.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/about/browse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/about/graphics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/about/web1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/back-top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/banner/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/banner/l5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/banner/overaly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/banner/p10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/banner/p3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/banner/p5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/banner/v-overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/bg/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/bg/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/bg_play_pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/blog/pic9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/clients/client1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/clients/client2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/clients/client3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/clients/client4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/clients/client5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/clients/client6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/clients/client7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/clients/client8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/color01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/controls.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/fancybox_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/fancybox_loading@2x.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/fancybox_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/fancybox_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/fancybox_sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/home/m16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/logo2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/logo3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/map1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/our_services/flux_car.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/our_services/m16_logo_navbar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/our_services/monroe_barber.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/our_services/pitstop_waffle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/our_services/subhaus_burger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/portfolio/p1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/portfolio/p2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/portfolio/p3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/portfolio/p4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/portfolio/p5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/portfolio/p6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/portfolio/p7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_rounded/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_rounded/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_rounded/contentPattern.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_rounded/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_rounded/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_rounded/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_square/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_square/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_square/contentPattern.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_square/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_square/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/dark_square/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/default/default_thumb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/default/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/default/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/default/sprite_next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/default/sprite_prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/default/sprite_x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/default/sprite_y.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/facebook/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/facebook/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/facebook/contentPatternBottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/facebook/contentPatternLeft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/facebook/contentPatternRight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/facebook/contentPatternTop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/facebook/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/facebook/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/facebook/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_rounded/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_rounded/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_rounded/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_rounded/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_rounded/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_square/btnNext.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_square/btnPrevious.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_square/default_thumbnail.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_square/loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/prettyPhoto/light_square/sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/slider/b6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/slider/s1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/slider/s2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/slider/s3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/team/pic1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/team/pic2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/team/pic3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/team/pic4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/team/pic5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/team/pic6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/images/testimonial2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/videos/gdrive.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/videos/gdrive.ogg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/videos/gdrive.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/m16.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/blog-single.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/flexslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/hover-min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/hover.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/jquery.bxslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/jquery.fancybox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/onepage-scroll.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/owl.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/prettyPhoto.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/red.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/head.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/gmaps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/imagelightbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/isotope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.bxslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.bxslider.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.counterup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.easing.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.fancybox.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.isotope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.prettyPhoto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.scrollTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/jquery.singlePageNav.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/smooth-scroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/vendor/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/vendor/modernizr-2.6.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/waypoints.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/js/wow.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homepage/portfolio-single.html" />
+>>>>>>> add static background image for our team section, modify footer
     </list>
     <ignored path="m16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,6 +208,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homepage/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -42,11 +225,22 @@
             <state vertical-scroll-proportion="-4.890909">
               <caret line="72" column="8" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="8" />
               <folding />
+=======
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homepage/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46254072">
+              <caret line="1464" column="85" selection-start-line="1464" selection-start-column="85" selection-end-line="1464" selection-end-column="85" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> add static background image for our team section, modify footer
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
         <entry file="file://$PROJECT_DIR$/Restaurant-master/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-15.927273">
@@ -61,15 +255,30 @@
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#section#7;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#section#8;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/../../xamppfiles/htdocs/startbootstrap-stylish-portfolio-1.0.4/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.583333">
+              <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
+              <folding />
+>>>>>>> add static background image for our team section, modify footer
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Restaurant-master/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.4529703">
               <caret line="1037" column="1" selection-start-line="1037" selection-start-column="1" selection-end-line="1037" selection-end-column="1" />
+=======
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homepage/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.2941175">
+              <caret line="198" column="64" selection-start-line="198" selection-start-column="64" selection-end-line="198" selection-end-column="64" />
+>>>>>>> add static background image for our team section, modify footer
               <folding />
             </state>
           </provider>
@@ -77,6 +286,7 @@
       </file>
     </leaf>
   </component>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -84,17 +294,24 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> add static background image for our team section, modify footer
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
         <option value="$PROJECT_DIR$/homepage/js/jarallax-0.2.4b.js" />
         <option value="$PROJECT_DIR$/homepage/index.php" />
         <option value="$PROJECT_DIR$/homepage/css/custom.css" />
         <option value="$PROJECT_DIR$/Restaurant-master/index.html" />
         <option value="$PROJECT_DIR$/Restaurant-master/css/main.css" />
+=======
+        <option value="$PROJECT_DIR$/homepage/css/custom.css" />
+        <option value="$PROJECT_DIR$/homepage/index.php" />
+>>>>>>> add static background image for our team section, modify footer
       </list>
     </option>
   </component>
@@ -108,10 +325,16 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
     <option name="height" value="1000" />
+=======
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="735" />
+>>>>>>> add static background image for our team section, modify footer
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -148,6 +371,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="m16" />
@@ -240,12 +464,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+=======
+>>>>>>> add static background image for our team section, modify footer
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RunManager">
@@ -277,6 +504,11 @@
       <envs />
       <method />
     </configuration>
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cyprass/html/homepage/index.html" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+>>>>>>> add static background image for our team section, modify footer
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -292,10 +524,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <frame x="0" y="23" width="1280" height="735" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16640624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> add static background image for our team section, modify footer
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -309,7 +548,11 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> add static background image for our team section, modify footer
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -333,6 +576,7 @@
     <entry file="file://$PROJECT_DIR$/homepage/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
           <caret line="170" column="38" selection-start-line="170" selection-start-column="24" selection-end-line="170" selection-end-column="38" />
           <folding />
         </state>
@@ -392,6 +636,11 @@
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#ul#0;n#div#1;n#div#1;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#section#7;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#section#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> add static background image for our team section, modify footer
           </folding>
         </state>
       </provider>
@@ -399,6 +648,7 @@
     <entry file="file://$PROJECT_DIR$/homepage/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
           <caret line="554" column="23" selection-start-line="554" selection-start-column="23" selection-end-line="554" selection-end-column="23" />
           <folding />
         </state>
@@ -415,11 +665,14 @@
     <entry file="file://$PROJECT_DIR$/homepage/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+=======
+>>>>>>> add static background image for our team section, modify footer
           <caret line="360" column="8" selection-start-line="360" selection-start-column="8" selection-end-line="360" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
     <entry file="file://$PROJECT_DIR$/homepage/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -432,10 +685,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="360" column="8" selection-start-line="360" selection-start-column="8" selection-end-line="360" selection-end-column="8" />
+=======
+    <entry file="file://$PROJECT_DIR$/homepage/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2941175">
+          <caret line="198" column="64" selection-start-line="198" selection-start-column="64" selection-end-line="198" selection-end-column="64" />
+>>>>>>> add static background image for our team section, modify footer
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
     <entry file="file://$PROJECT_DIR$/homepage/js/jarallax-0.2.4b.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="33.152954">
@@ -447,18 +707,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3329208">
           <caret line="253" column="20" selection-start-line="253" selection-start-column="16" selection-end-line="253" selection-end-column="20" />
+=======
+    <entry file="file://$PROJECT_DIR$/../cyprass/html/homepage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2044293">
+          <caret line="194" column="26" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="26" />
+>>>>>>> add static background image for our team section, modify footer
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
     <entry file="file://$PROJECT_DIR$/homepage/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.23077">
           <caret line="95" column="48" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="48" />
+=======
+    <entry file="file://$PROJECT_DIR$/../../xamppfiles/htdocs/startbootstrap-stylish-portfolio-1.0.4/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.583333">
+          <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
+>>>>>>> add static background image for our team section, modify footer
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
     <entry file="file://$PROJECT_DIR$/homepage/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.890909">
@@ -480,10 +754,19 @@
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#ul#0;n#div#1;n#div#1;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#section#7;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#section#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/homepage/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46254072">
+          <caret line="1464" column="85" selection-start-line="1464" selection-start-column="85" selection-end-line="1464" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> add static background image for our team section, modify footer
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
     <entry file="file://$PROJECT_DIR$/Restaurant-master/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4529703">
@@ -492,5 +775,22 @@
         </state>
       </provider>
     </entry>
+=======
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+>>>>>>> add static background image for our team section, modify footer
   </component>
 </project>

@@ -295,6 +295,13 @@ INTRO CONTAINER
     background-position: center;
     background-attachment: fixed;
 }
+
+.subhaus_ig.background_content{
+    background: url('../images/featured.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 /*.bread.background_content{*/
     /*background: url('../images/breakfast.jpg') no-repeat center center; */
     /*background-size: cover;*/
@@ -764,7 +771,7 @@ MEDIA QUERIES TABLET
     =========================*/
     section.subhaus_ig {
         height: 300px;
-
+        background-color: #3C3C3C;
     }
 
 } /*END OF MEDIA QUERY*/

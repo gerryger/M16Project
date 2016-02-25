@@ -1572,10 +1572,13 @@
         <script type="text/javascript" src="js/gmaps.js"></script>
 			 <!-- Custom js -->
         <script src="js/custom.js"></script>
+<<<<<<< 38bb5ae9091f631bd4f2dab3190e72361543e0a3
 
         <!-- jarallax-0.2.4b -->
         <script src="js/jarallax-0.2.4b.js"></script>
 
+=======
+>>>>>>> add static background image for our team section, modify footer
 	     <script>
 		// Google Map - with support of gmaps.js
      var map;
