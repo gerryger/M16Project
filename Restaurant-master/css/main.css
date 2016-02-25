@@ -284,7 +284,7 @@ INTRO CONTAINER
     background-attachment: fixed;
 }
  .pricing.background_content{
-    background: url('../images/pricing.jpg') no-repeat center center; 
+    background: url('../images/slider/subhaus-1.PNG') no-repeat center center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1040,7 +1040,7 @@ MEDIA QUERIE DESKTOP
     /*opacity:.6;*/
     /* width: 100%;
      height: auto;*/
-    width: 100%;
+    /*width: 100%;*/
     display: block;
 }
 
