@@ -1046,6 +1046,7 @@ MEDIA QUERIE DESKTOP
 
 /*-- Animation --*/
 
+
 .carousel .item.active .animated2 {
     -webkit-animation: lightSpeedIn 1s ease-in 200ms both;
     animation: lightSpeedIn 1s ease-in 200ms both;
