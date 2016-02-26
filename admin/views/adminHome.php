@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 <body>
-
+    <h1>Welcome to M16 admin home</h1>
 
     <!-- Javascript files -->
     <script type="text/javascript" src="js/bootstrap.js" />

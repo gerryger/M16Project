@@ -7,4 +7,7 @@
  */
 if($_POST && isset($_POST['username'], $_POST['password'])){
 
+    if($_POST['username'] == 'admin' && $_POST['password'] == 'admin'){
+        header('Location: ../views/adminHome.php');
+    }
 }
