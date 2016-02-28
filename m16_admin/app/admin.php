@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class admin extends Model
 {
-    //
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = array('name', 'email', 'password');
 }

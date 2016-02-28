@@ -6,8 +6,8 @@
 
 @section('content')
     <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <h1>Welcome to M16 Admin Page</h1>
         <div class="panel panel-info" >
-
             <div class="panel-heading">
 
                 <div class="panel-title">Sign In</div>
@@ -17,22 +17,25 @@
 
             <div style="padding-top:30px" class="panel-body" >
 
+                <!-- Display Validation Errors -->
+                @include('common.errors')
+
                 <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
 
-                {!! Form::open() !!}}
+                {!! Form::open(array('url'=>'/login')) !!}
 
                     <div style="margin-bottom: 25px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                         {{--<input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">--}}
 
-                        {!! Form::text('username',null, ['class'=>'form-control', 'id'=>'login-username', 'placeholder'=>'Email']) !!}
+                        {!! Form::text('email',null, ['class'=>'form-control', 'id'=>'login-email', 'placeholder'=>'Email']) !!}
                     </div>
 
                     <div style="margin-bottom: 25px" class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                         {{--<input id="login-password" type="password" class="form-control" name="password" placeholder="password">--}}
 
-                        {!! Form::text('password',null, ['class'=>'form-control', 'id'=>'login-password', 'placeholder'=>'Password']) !!}
+                        {!! Form::password('password', ['class'=>'form-control', 'id'=>'login-password', 'placeholder'=>'Password']) !!}
                     </div>
 
                     <div style="margin-top:10px" class="form-group">

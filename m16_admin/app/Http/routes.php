@@ -15,9 +15,14 @@
 
 
 //display login page
-Route::get('/', function () {
-    return view('login');
-});
+
+/*
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+*/
+
+
+
 
 
 /*
@@ -32,5 +37,13 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+
+    Route::get('/', 'LoginController@index');
+    Route::get('/main', 'MainController@index');
+
+    //login route
+    Route::post('/login', 'LoginController@login');
+
+
+
 });
