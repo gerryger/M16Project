@@ -12,7 +12,8 @@
             <!-- New Event Form -->
             {!! Form::open(array('url'=>'/doinsertevent', 'method'=>'post', 'class'=>'form-horizontal')) !!}
                 <div class="form-group">
-                    <label for=""
+                    {!! Form::label('page', 'Page', array('class'=>'control-label')) !!}
+                    {!! Form::select('page', array('') ) !!}
                 </div>
             {!! Form::close() !!}
         </div>
