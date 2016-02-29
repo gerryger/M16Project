@@ -10,6 +10,10 @@ use App\Http\Controllers\Controller;
 class MainController extends Controller
 {
    public function index(){
-       echo 'ASDASDASD';
+       return view('home');
+   }
+
+   public function newevent(){
+       return view('newevent');
    }
 }

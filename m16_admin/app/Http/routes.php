@@ -44,6 +44,6 @@ Route::group(['middleware' => ['web']], function () {
     //login route
     Route::post('/login', 'LoginController@login');
 
-
+    Route::get('/newtask', 'MainController@newtask');
 
 });
