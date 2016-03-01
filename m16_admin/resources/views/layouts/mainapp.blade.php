@@ -16,16 +16,39 @@
     <title>M16 Admin - Main Page</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="../resources/assets/sbadmin/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="../resources/assets/sbadmin/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{ asset('sbadmin/bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
 
     <!-- MetisMenu CSS -->
-    <link href="../resources/assets/sbadmin//bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <!-- <link href="../resources/assets/sbadmin//bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet"> -->
+    <link href="{{ asset('sbadmin/bower_components/metisMenu/dist/metisMenu.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../resources/assets/sbadmin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <!-- <link href="../resources/assets/sbadmin/dist/css/sb-admin-2.css" rel="stylesheet"> -->
+    <link href="{{ asset('sbadmin/dist/css/sb-admin-2.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../resources/assets/sbadmin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="../resources/assets/sbadmin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="{{ asset('sbadmin/bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+
+    <!-- Datatable css -->
+    <link href="{{ asset('sbadmin/bower_components/datatables/media/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('sbadmin/bower_components/datatables/media/css/dataTables.foundation.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('sbadmin/bower_components/datatables/media/css/dataTables.jqueryui.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('sbadmin/bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('sbadmin/bower_components/datatables/media/css/jquery.dataTables_themeroller.css') }}" rel="stylesheet">
+
+
+    <!-- Bootstrap datepicker CSS [START] -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
+    <!-- Bootstrap datepicker [END] -->
+
+
+    <!-- Bootstrap Datepicker JS [START ]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <!-- Bootstrap datepicker JS[END] -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,16 +59,31 @@
 
 
     <!-- jQuery -->
-    <script src="../resources/assets/sbadmin/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="../resources/assets/sbadmin/bower_components/jquery/dist/jquery.min.js"></script> -->
+    <script src="{{ asset('sbadmin/bower_components/jquery/dist/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../resources/assets/sbadmin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="../resources/assets/sbadmin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="{{ asset('sbadmin/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="../resources/assets/sbadmin/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <!-- <script src="../resources/assets/sbadmin/bower_components/metisMenu/dist/metisMenu.min.js"></script> -->
+    <script src="{{ asset('sbadmin/bower_components/metisMenu/dist/metisMenu.min.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../resources/assets/sbadmin/dist/js/sb-admin-2.js"></script>
+    {{--<script src="../resources/assets/sbadmin/dist/js/sb-admin-2.js"></script>--}}
+    <script src="{{ asset('sbadmin/dist/js/sb-admin-2.js') }}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    {{--<script src="../resources/assets/sbadmin/bower_components"></script>--}}
+    <script src="{{ asset('sbadmin/bower_components') }}"></script>
+
+    <!-- Data Table js -->
+    <script src="{{ asset('sbadmin/bower_components/datatables/media/js/dataTables.bootstrap.min.js') }}"></script>
+    <script src="{{ asset('sbadmin/bower_components/datatables/media/js/dataTables.foundation.min.js') }}"></script>
+    <script src="{{ asset('sbadmin/bower_components/datatables/media/js/dataTables.jqueryui.min.js') }}"></script>
+    <script src="{{ asset('sbadmin/bower_components/datatables/media/js/jquery.dataTables.min.js') }}"></script>
+
 </head>
 <body>
     <div id="wrapper">
@@ -59,7 +97,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">M16 Admin</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -91,7 +129,7 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Events<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="{{ url('/newtask') }}">Add Event</a>
+                                    <a href="{{ url('/newevent') }}">Add Event</a>
                                 </li>
                                 <li>
                                     <a href="#">Edit Event</a>
@@ -118,5 +156,15 @@
     <div id="footer" align="center" style="background-color:#cccccc;">
         <strong>Test &copy; 2016</strong>
     </div>
+
+    <script type="text/javascript">
+
+
+
+
+//        $(function(){
+//            $('#datetimepickerStart').datepicker();
+//        });
+    </script>
 </body>
 </html>
