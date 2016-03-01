@@ -16,7 +16,7 @@ class MainController extends Controller
    }
 
    public function newevent(){
-       return view('newevent')->with('events', Event::all());
+       return view('newevent', ['events' => Event::all()]);
    }
 
    public function doinsertevent(Request $request){

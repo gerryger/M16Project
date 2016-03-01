@@ -3,6 +3,7 @@
 @extends('layouts.mainapp')
 
 @section('content')
+        {{ $events }}
     <!-- Events table [START] -->
     <div class="panel panel-default" style="margin-top: 20px">
         <div class="panel-heading"><strong>Current Events</strong></div>
@@ -19,12 +20,24 @@
                 <tbody>
                     @foreach($events as $event)
                         <tr>
-                            <td>$event->ev_name</td>
-                            <td>$event->ev_page</td>
-                            <td>$event->ev_start</td>
-                            <td>$event->ev_end</td>
-                            <td>$event->ev_desc</td>
-                            <td><button class="btn btn-danger"><a href="/deleteevent/$event->id">Delete</a></button></td>
+                            <td>{{ $event->ev_name }}</td>
+                            @if($event->ev_page == 'l')
+                                <td>Landing Page</td>
+                            @elseif($event->ev_page == 's')
+                                <td>Subhaus</td>
+                            @elseif($event->ev_page == 'm')
+                                <td>Monroe</td>
+                            @elseif($event->ev_page == 'p')
+                                <td>Pitstop</td>
+                            @elseif($event->ev_page == 'f')
+                                <td>Flux</td>
+                            @else
+                                <td>{{ $event->ev_page }}</td>
+                            @endif
+                            <td>{{ $event->ev_start }}</td>
+                            <td>{{ $event->ev_end }}</td>
+                            <td>{{ $event->ev_desc  }}</td>
+                            <td><button class="btn btn-danger"><a href="/deleteevent/{{ $event->id }}">Delete</a></button></td>
                         </tr>
                     @endforeach
                 </tbody>
