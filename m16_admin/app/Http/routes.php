@@ -44,7 +44,10 @@ Route::group(['middleware' => ['web']], function () {
     //login route
     Route::post('/login', 'LoginController@login');
 
+    Route::post('/logout', 'LoginController@logout');
+
     Route::get('/newevent', 'MainController@newevent');
     Route::post('/doinsertevent', 'MainController@doinsertevent');
+    Route::delete('/deleteevent/{event}', 'MainController@deleteevent');
 
 });

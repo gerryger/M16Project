@@ -19,6 +19,14 @@ class MainController extends Controller
        return view('newevent', ['events' => Event::all()]);
    }
 
+   public function deleteevent(Request $request, Event $event){
+        $this->authorize('destroy', $event);
+
+       $event->delete();
+
+       return redirect('/newevent');
+   }
+
    public function doinsertevent(Request $request){
        $validator = Validator::make($request->all(), [
            'txtEventName' => 'required',

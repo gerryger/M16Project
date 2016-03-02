@@ -3,7 +3,6 @@
 @extends('layouts.mainapp')
 
 @section('content')
-        {{ $events }}
     <!-- Events table [START] -->
     <div class="panel panel-default" style="margin-top: 20px">
         <div class="panel-heading"><strong>Current Events</strong></div>
@@ -37,7 +36,15 @@
                             <td>{{ $event->ev_start }}</td>
                             <td>{{ $event->ev_end }}</td>
                             <td>{{ $event->ev_desc  }}</td>
-                            <td><button class="btn btn-danger"><a href="/deleteevent/{{ $event->id }}">Delete</a></button></td>
+                            <td>
+                                <form action="{{ url('/deleteevent/'.$event->id) }}" method="POST">
+                                    {!! csrf_field() !!}
+                                    {!! method_field('DELETE') !!}
+                                    <button type="submit" id="delete-event-{{ $event->id }}" class="btn btn-danger">
+                                        <i class="fa fa-btn fa-trash"></i>Delete
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>
@@ -90,6 +97,13 @@
                                 <span id="startDateIcon" class="glyphicon glyphicon-calendar"></span>
                             </span>
                         </div>
+                        {{--<div id="datetimepicker1" class="input-append date">--}}
+                            {{--<input data-format="dd/MM/yyyy hh:mm:ss" type="text" />--}}
+                            {{--<span class="add-on">--}}
+                              {{--<i data-time-icon="icon-time" data-date-icon="icon-calendar">--}}
+                              {{--</i>--}}
+                            {{--</span>--}}
+                        {{--</div>--}}
                     </div>
                 </div>
 
@@ -115,7 +129,7 @@
 
                     </div>
                     <div class="col-md-3 col-lg-3 ">
-                        {!! Form::textarea('txtDescription',null, array('class' => 'form-control')) !!}
+                        {!! Form::textarea('txtDescription',null, array('class' => 'form-control', 'style' => 'height: 80px')) !!}
                     </div>
                 </div>
 
@@ -126,13 +140,12 @@
                 </div>
 
             <script type="text/javascript">
-                $(function () {
-                    $('#datetimepicker1').data('DateTimePicker').show();
-                });
-
-                $(document).ready(function(){
-                    $('#eventsTable').dataTable();
-                });
+//                $(document).ready(function(){
+//                    $('#eventsTable').dataTable();
+//                    $('#datetimepicker1').datetimepicker({
+//                        language: 'pt-BR'
+//                    });
+//                });
             </script>
             {!! Form::close() !!}
         </div>

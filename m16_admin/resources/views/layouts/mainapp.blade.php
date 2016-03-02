@@ -38,17 +38,11 @@
     <link href="{{ asset('sbadmin/bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet">
     <link href="{{ asset('sbadmin/bower_components/datatables/media/css/jquery.dataTables_themeroller.css') }}" rel="stylesheet">
 
+    <!-- BS Datepicker [START] -->
+    <link href="{{ asset('sbadmin/datetimepicker/css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet" />
+    <script src="{{ asset('sbadmin/datetimepicker/js/bootstrap-datetimepicker.min.js') }}" type="text/javascript"></script>
+    <!-- BS Datepicker [END] -->
 
-    <!-- Bootstrap datepicker CSS [START] -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
-    <!-- Bootstrap datepicker [END] -->
-
-
-    <!-- Bootstrap Datepicker JS [START ]-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-    <!-- Bootstrap datepicker JS[END] -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -105,7 +99,11 @@
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        <i class="fa fa-user fa-fw"></i>
+                        @if(Session::has('login'))
+                            {{ Session::get('login')->name }}}
+                        @endif
+                        <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
@@ -113,7 +111,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="{{ url('/') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="{{ url('/logout') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -158,7 +156,12 @@
     </div>
 
     <script type="text/javascript">
-
+        $(document).ready(function(){
+            $('#eventsTable').dataTable();
+            $('#datetimepicker1').datetimepicker({
+                language: 'pt-BR'
+            });
+        });
 
 
 
