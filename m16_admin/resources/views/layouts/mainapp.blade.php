@@ -38,9 +38,14 @@
     <link href="{{ asset('sbadmin/bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet">
     <link href="{{ asset('sbadmin/bower_components/datatables/media/css/jquery.dataTables_themeroller.css') }}" rel="stylesheet">
 
+    <!-- jQuery -->
+    <!-- <script src="../resources/assets/sbadmin/bower_components/jquery/dist/jquery.min.js"></script> -->
+    <script src="{{ asset('sbadmin/bower_components/jquery/dist/jquery.min.js') }}"></script>
+
     <!-- BS Datepicker [START] -->
-    <link href="{{ asset('sbadmin/datetimepicker/css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet" />
-    <script src="{{ asset('sbadmin/datetimepicker/js/bootstrap-datetimepicker.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('sbadmin/bower_components/moment/min/moment.min.js') }}"></script>
+    <link href="{{ asset('sbadmin/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet" />
+    <script src="{{ asset('sbadmin/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js') }}" type="text/javascript"></script>
     <!-- BS Datepicker [END] -->
 
 
@@ -51,10 +56,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-    <!-- jQuery -->
-    <!-- <script src="../resources/assets/sbadmin/bower_components/jquery/dist/jquery.min.js"></script> -->
-    <script src="{{ asset('sbadmin/bower_components/jquery/dist/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <!-- <script src="../resources/assets/sbadmin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
@@ -101,7 +102,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i>
                         @if(Session::has('login'))
-                            {{ Session::get('login')->name }}}
+                            {{ Session::get('login') }}
                         @endif
                         <i class="fa fa-caret-down"></i>
                     </a>
@@ -111,7 +112,8 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="{{ url('/logout') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li>
+                            <a href="{{ url('/logout') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -158,9 +160,6 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('#eventsTable').dataTable();
-            $('#datetimepicker1').datetimepicker({
-                language: 'pt-BR'
-            });
         });
 
 

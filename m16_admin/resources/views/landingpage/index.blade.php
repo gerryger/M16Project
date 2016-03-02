@@ -5,10 +5,10 @@
 	
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/bootstrap.css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/linea-icon.css" />
-	<link rel="stylesheet" href="css/fancy-buttons.css" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/bootstrap.css') }}" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/font-awesome.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/linea-icon.css') }}" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/fancy-buttons.css') }}" />
 	
 	<!--=== Google Fonts ===-->
 	<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
@@ -16,17 +16,17 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<!--=== Other CSS files ===-->
-	<link rel="stylesheet" href="css/animate.css" />
-	<link rel="stylesheet" href="css/jquery.vegas.css" />
-	<link rel="stylesheet" href="css/baraja.css" />
-	<link rel="stylesheet" href="css/jquery.bxslider.css" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/animate.css') }}" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/jquery.vegas.css') }}" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/baraja.css') }}" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/jquery.bxslider.css') }}" />
 	
 	<!--=== Main Stylesheets ===-->
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/style.css') }}" />
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/responsive.css') }}" />
 	
 	<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
-	<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
+	<link rel="stylesheet" id="scheme-source" href="{{ asset('landingpage_asset/css/schemes/gray.css') }}" />
 	
 	<!--=== Internet explorer fix ===-->
 	<!-- [if lt IE 9]>
@@ -82,20 +82,20 @@
 			<div class="section-overlay"></div>
 			<div class="container home">
 				<div class="row">
-					<h1 class="well-come"><img src="images/_m16logo.png"></h1>
+					<h1 class="well-come"><img src="{{ asset('landingpage_asset/images/_m16logo.png') }}"></h1>
 					
 					<div class="col-md-8 col-md-offset-2">
 						<p class="intro-message">M16 District - One Stop Entertainment, <i>where all your needs will be fulfilled<i></p>
 						
 						<div class="col-md-10 col-md-offset-1">
 							<a>
-								<img src="images/_subhausLogo.png">
+								<img src="{{ asset('landingpage_asset/images/_subhausLogo.png') }}">
 							</a>							
 							<a>
-								<img src="images/_pitstopLogo.png">
+								<img src="{{ asset('landingpage_asset/images/_pitstopLogo.png') }}">
 							</a>
 							<a>		
-								<img src="images/_fluxLogo.png">
+								<img src="{{ asset('landingpage_asset/images/_fluxLogo.png') }}">
 							</a>
 						</div>
 					</div>
@@ -197,7 +197,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<h4 class="footer-title"><!-- Footer Title -->
-						<a class="site-name" href="#"><img src="images/_m16logo-s.png"></a>
+						<a class="site-name" href="#"><img src="{{ asset('landingpage_asset/images/_m16logo-s.png') }}"></a>
 					</h4>
 					
 					<!-- Social Links -->
@@ -221,28 +221,28 @@
 	
 <!--==== Js files ====-->
 <!--==== Essential files ====-->
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
-<script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery-1.11.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrapValidator.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/modernizr.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.easing.1.3.js') }}"></script>
 
 <!--==== Slider and Card style plugin ====-->
 <script type="text/javascript" src="js/jquery.baraja.js"></script>
-<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
-<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.vegas.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.bxslider.min.js') }}"></script>
 
 <!--==== MailChimp Widget plugin ====-->
-<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.ajaxchimp.min.js') }}"></script>
 
 <!--==== Scroll and navigation plugins ====-->
-<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-<script type="text/javascript" src="js/jquery.nav.js"></script>
-<script type="text/javascript" src="js/jquery.appear.js"></script>
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nicescroll.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nav.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.appear.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.fitvids.js') }}"></script>
 
 <!--==== Custom Script files ====-->
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/custom.js') }}"></script>
 
 </body>
 </html>

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
 use App\Admin;
@@ -15,7 +14,7 @@ class LoginController extends Controller
     public function index(Request $request)
     {
         //check session
-        if ($request->session()->has('login')) {
+        if (session('login') != null) {
             return redirect('/main');
         } else {
             return view('login');
@@ -37,11 +36,18 @@ class LoginController extends Controller
 
             if(count($admin) > 0){
                 //create session
-                //$request->session()->put('login', $request->name);
+                session(['login' => $admin->name]);
                 return redirect('/main');
             }else{
                 return redirect('/')->withInput($request->all())->withErrors('Incorrect Credentials!');
             }
+        }
+    }
+
+    public function logout(Request $request){
+        if($request->session()->has('login') != null){
+            $request->session()->forget('login');
+            return redirect('/');
         }
     }
 

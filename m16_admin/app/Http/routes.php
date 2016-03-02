@@ -14,7 +14,6 @@
 */
 
 
-//display login page
 
 /*
 use Illuminate\Support\Facades\Validator;
@@ -38,16 +37,28 @@ use Illuminate\Http\Request;
 
 Route::group(['middleware' => ['web']], function () {
 
-    Route::get('/', 'LoginController@index');
+    //Routes for front end page [START]
+
+    Route::get('/', 'FrontEndController@index');
+
+    //Routes for front end page [END]
+
+
+    /*==================================================================*/
+
+    //Routes for admin page [START]
+
+    Route::get('/m16admin', 'LoginController@index');
     Route::get('/main', 'MainController@index');
 
     //login route
     Route::post('/login', 'LoginController@login');
 
-    Route::post('/logout', 'LoginController@logout');
+    Route::get('/logout', 'LoginController@logout');
 
     Route::get('/newevent', 'MainController@newevent');
     Route::post('/doinsertevent', 'MainController@doinsertevent');
     Route::delete('/deleteevent/{event}', 'MainController@deleteevent');
 
+    //Routes for admin page [END]
 });

@@ -91,7 +91,7 @@
                         {!! Form::label('startdate', 'Start', array('class'=>'control-label')) !!}
                     </div>
                     <div class="col-md-3 col-lg-3">
-                        <div class="input-group date" id="datetimepicker1">
+                        <div class="input-group date">
                             {!! Form::text('txtStartDate', null, array('class' => 'form-control', 'id'=>'txtStartDate')) !!}
                             <span class="input-group-addon">
                                 <span id="startDateIcon" class="glyphicon glyphicon-calendar"></span>
@@ -113,7 +113,7 @@
                         {!! Form::label('enddate', 'End', array('class'=>'control-label')) !!}
                     </div>
                     <div class="col-md-3 col-lg-3">
-                        <div class="input-group date" id="datetimepicker1">
+                        <div class="input-group date">
                             {!! Form::text('txtEndDate', null, array('class' => 'form-control', 'id'=>'txtEndDate')) !!}
                             <span class="input-group-addon">
                                     <span id="endDateIcon" class="glyphicon glyphicon-calendar"></span>
@@ -140,12 +140,9 @@
                 </div>
 
             <script type="text/javascript">
-//                $(document).ready(function(){
-//                    $('#eventsTable').dataTable();
-//                    $('#datetimepicker1').datetimepicker({
-//                        language: 'pt-BR'
-//                    });
-//                });
+               $(function(){
+                   $('.date').datetimepicker();
+               });
             </script>
             {!! Form::close() !!}
         </div>

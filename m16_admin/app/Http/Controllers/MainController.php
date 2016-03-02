@@ -20,7 +20,7 @@ class MainController extends Controller
    }
 
    public function deleteevent(Request $request, Event $event){
-        $this->authorize('destroy', $event);
+        //$this->authorize('destroy', $event);
 
        $event->delete();
 
