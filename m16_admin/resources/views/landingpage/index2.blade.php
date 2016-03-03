@@ -27,12 +27,7 @@
 	
 	<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
 	<link rel="stylesheet" id="scheme-source" href="{{ asset('landingpage_asset/css/schemes/gray.css') }}" />
-
-
-	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css" />
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
-
+	
 	<!--=== Internet explorer fix ===-->
 	<!-- [if lt IE 9]>
 		<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -67,8 +62,7 @@
 						
 						<!-- Main Navigation menu Starts -->
 						<div class="collapse navbar-collapse navbar-responsive-collapse">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#section-home">Home</a></li>
+							<ul class="nav navbar-nav navbar-right">	
 								<li><a href="#section-subhaus">Subhaus</a></li>
 								<li><a href="#section-pitstop">Pitstop</a></li>
 								<li><a href="#section-flux">Flux</a></li>
@@ -91,7 +85,7 @@
 					<h1 class="well-come"><img src="{{ asset('landingpage_asset/images/_m16logo.png') }}"></h1>
 					
 					<div class="col-md-8 col-md-offset-2">
-						<p class="intro-message">M16 District - One Stop Entertainment, <i>where all your needs will be fulfilled</i></p>
+						<p class="intro-message">M16 District - One Stop Entertainment, <i>where all your needs will be fulfilled<i></p>
 						
 						<div class="col-md-10 col-md-offset-1">
 							<a>
@@ -135,11 +129,7 @@
 		</div>
 	</section>
 	<!--=== pitstop section Ends ===-->
-
-	{{--<br/>--}}
-	{{--<br/>--}}
-	{{--<br/>--}}
-
+		
 	<!--=== flux section Starts ===-->
 	<section id="section-flux" class="section-wrap">
 		<div class="container big-flux center">
@@ -151,10 +141,6 @@
 		</div>
 	</section>
 	<!--=== flux section Ends ===-->
-
-	{{--<br/>--}}
-	{{--<br/>--}}
-	{{--<br/>--}}
 	
 	<!--=== monroe section Starts ===-->
 	<section id="section-monroe" class="monroe-wrap">
@@ -173,25 +159,7 @@
 		<div class="container events center">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Events</h1>
-					<table id="eventsTable" class="table table-bordered">
-						<thead>
-							<th class="text-center">Event</th>
-							<th class="text-center">Starts</th>
-							<th class="text-center">Ends</th>
-							<th class="text-center">Description</th>
-						</thead>
-						<tbody>
-						@foreach($events as $event)
-							<tr>
-								<td>{{ $event->ev_name }}</td>
-								<td>{{ $event->ev_start }}</td>
-								<td>{{ $event->ev_end }}</td>
-								<td>{{ $event->ev_desc }}</td>
-							</tr>
-						@endforeach
-						</tbody>
-					</table>
+					<h1>Event</h1>	
 				</div>
 			</div>
 		</div>
@@ -213,7 +181,13 @@
 	
 	<!--=== location section Starts ===-->
 	<section id="section-location" class="location-wrap">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8529017981023!2d106.71109931515323!3d-6.283059995452488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69faa297972ad7%3A0xa1980a9bf9be5cef!2sSUBHAUS!5e0!3m2!1sen!2sid!4v1456967087204" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="container location center">
+			<div class="row">
+				<div class="col-lg-12">	
+					<h1>Location</h1>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!--=== location section Ends ===-->
 		
@@ -244,37 +218,34 @@
 		</div>
 	</div>
 	<!--=== Footer section Ends ===-->
-	
-<!--==== Js files ====-->
-<!--==== Essential files ====-->
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery-1.11.1.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrapValidator.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/modernizr.js') }}"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.easing.1.3.js') }}"></script>
 
-<!--==== Slider and Card style plugin ====-->
-<script type="text/javascript" src="js/jquery.baraja.js"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.vegas.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.bxslider.min.js') }}"></script>
+	<!--==== Js files ====-->
+	<!--==== Essential files ====-->
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery-1.11.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrapValidator.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/modernizr.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.easing.1.3.js') }}"></script>
 
-<!--==== MailChimp Widget plugin ====-->
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.ajaxchimp.min.js') }}"></script>
+	<!--==== Slider and Card style plugin ====-->
+	<script type="text/javascript" src="js/jquery.baraja.js"></script>
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.vegas.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.bxslider.min.js') }}"></script>
 
-<!--==== Scroll and navigation plugins ====-->
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nicescroll.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nav.js') }}"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.appear.js') }}"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.fitvids.js') }}"></script>
+	<!--==== MailChimp Widget plugin ====-->
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.ajaxchimp.min.js') }}"></script>
+
+	<!--==== Scroll and navigation plugins ====-->
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nicescroll.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nav.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.appear.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.fitvids.js') }}"></script>
+
+	<!--==== Custom Script files ====-->
+	<script type="text/javascript" src="{{ asset('landingpage_asset/js/custom.js') }}"></script>
 
 <!--==== Custom Script files ====-->
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/custom.js') }}"></script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#eventsTable').DataTable();
-	});
-</script>
+<script type="text/javascript" src="js/custom.js"></script>
 
 </body>
 </html>

@@ -47,7 +47,7 @@ class LoginController extends Controller
     public function logout(Request $request){
         if($request->session()->has('login') != null){
             $request->session()->forget('login');
-            return redirect('/');
+            return redirect('/m16admin');
         }
     }
 

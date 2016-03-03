@@ -57,6 +57,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/logout', 'LoginController@logout');
 
     Route::get('/newevent', 'MainController@newevent');
+    Route::get('/editevent', 'MainController@editevent');
     Route::post('/doinsertevent', 'MainController@doinsertevent');
     Route::delete('/deleteevent/{event}', 'MainController@deleteevent');
 

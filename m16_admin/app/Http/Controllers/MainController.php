@@ -12,7 +12,11 @@ use App\Event;
 class MainController extends Controller
 {
    public function index(){
-       return view('home');
+       if (session('login') != null) {
+           return view('home');
+       }else{
+           return view('login');
+       }
    }
 
    public function newevent(){
@@ -50,5 +54,9 @@ class MainController extends Controller
 
            return redirect('/newevent');
        }
+   }
+
+   public function editevent(){
+       return view('editevent', ['events' => Event::all()]);
    }
 }

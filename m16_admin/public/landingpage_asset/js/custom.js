@@ -11,16 +11,16 @@ $(window).load(function() {
 /* ----------------------------- 
 Backgroung slider
 ----------------------------- */
-$(window).ready(function() {
-	'use strict';
-	$.vegas('slideshow', {
-	  backgrounds:[
-		{ src:'images/bg-slider/bg-1.jpg', fade:1000 },
-		{ src:'images/bg-slider/bg-2.jpg', fade:1000 },
-		{ src:'images/bg-slider/bg-3.jpg', fade:1000 }
-	  ]
-	})();
-});
+//$(window).ready(function() {
+//	'use strict';
+//	$.vegas('slideshow', {
+//	  backgrounds:[
+//		{ src:'landingpage_asset/images/bg-slider/bg-1.jpg', fade:1000 },
+//		{ src:'landingpage_asset/images/bg-slider/bg-2.jpg', fade:1000 },
+//		{ src:'landingpage_asset/images/bg-slider/bg-3.jpg', fade:1000 }
+//	  ]
+//	})();
+//});
 
 
 				
@@ -229,4 +229,41 @@ $(document).ready(function() {
 	});
 
 });
-			
+
+
+
+
+
+
+
+
+/* --------------------------------------------
+ Custom Javascript By Gerry Caesario 2016.03.03
+ ------------------------------------------- */
+function isScrolledIntoView(elem)
+{
+	var docViewTop = $(window).scrollTop();
+	var docViewBottom = docViewTop + $(window).height();
+	var elemTop = $(elem).offset().top;
+	var elemBottom = elemTop + $(elem).height();
+	return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+$(document).scroll(function(){
+	//if(isScrolledIntoView($('#section-flux')))
+	//{
+	//	$.vegas('slideshow',{
+	//		backgrounds: [
+	//			{ src: 'landingpage_asset/images/_fluxLogo.png', fade: 1000}
+	//		]
+	//	});
+	//}
+
+	//if($(this).scrollTop() >= $('#section-subhaus').position().top){
+	//	alert('Subhaus section');
+	//}
+    //
+	//if($(this).scrollTop() >= $('#section-flux').position().top){
+	//	alert('flux section');
+	//}
+});

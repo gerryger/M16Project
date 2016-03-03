@@ -132,7 +132,7 @@
                                     <a href="{{ url('/newevent') }}">Add Event</a>
                                 </li>
                                 <li>
-                                    <a href="#">Edit Event</a>
+                                    <a href="{{ url('/editevent') }}">Edit Event</a>
                                 </li>
                                 <li>
                                     <a href="#">Delete Event</a>
