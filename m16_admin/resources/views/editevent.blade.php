@@ -5,22 +5,23 @@
 @section('content')
         <script type="text/javascript" src="{{ asset('sbadmin/js/editevent_js_own.js') }}"></script>
         <!-- Events table [START] -->
+
         <div class="panel panel-default" style="margin-top: 20px">
             <div class="panel-heading"><strong>Current Events</strong></div>
             <div class="panel-body">
                 <table id="editEventsTable" class="table table-hover table-striped" width="100%">
                     <thead>
-                    <th>Event Name</th>
-                    <th>Page</th>
-                    <th>Start</th>
-                    <th>End</th>
-                    <th>Description</th>
-                    <th>Action</th>
+                        <th>Event Name</th>
+                        <th>Page</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Description</th>
+                        <th>Action</th>
                     </thead>
                     <tbody>
                     @foreach($events as $event)
                         <tr>
-                            <td>{{ $event->ev_name }}</td>
+                            <td><input type="hidden" class="event_id" value="{{ $event->id }}" /> {{ $event->ev_name }}</td>
                             @if($event->ev_page == 'l')
                                 <td>Landing Page</td>
                             @elseif($event->ev_page == 's')
@@ -58,7 +59,7 @@
                 <!-- Display Validation Errors -->
                 @include('common.errors')
                 <!-- New Event Form -->
-                {!! Form::open(array('url'=>'/doeditevent', 'method'=>'post', 'class'=>'form-horizontal')) !!}
+                {!! Form::open(array('id' => 'editEventForm','url'=>'/doeditevent', 'method'=>'post', 'class'=>'form-horizontal', 'role' => 'form')) !!}
 
                 {{-- Page --}}
                 <div class="form-group">
@@ -69,7 +70,11 @@
                     $pages = array('l' => 'Landing Page', 's' => 'Subhaus', 'm' => 'Monroe', 'p' => 'Pitstop', 'f' => 'Flux');
                     ?>
                     <div class="col-md-3 col-lg-3">
-                        {!! Form::select('page', $pages, 'l', array('class' => 'form-control') ) !!}
+                        {{-- ID (Hidden field) [START] --}}
+                        {!! Form::hidden('eventID',null, array('id' => 'eventID')) !!}
+                        {{-- ID (Hidden field) [END] --}}
+
+                        {!! Form::select('page', $pages, 'l', array('class' => 'form-control', 'id' => 'page') ) !!}
                     </div>
                 </div>
 
@@ -79,7 +84,7 @@
                         {!! Form::label('eventname', 'Event Name', array('class'=>'control-label')) !!}
                     </div>
                     <div class="col-md-3 col-lg-3">
-                        {!! Form::text('txtEventName', null, array('class' => 'form-control')) !!}
+                        {!! Form::text('txtEventName', null, array('class' => 'form-control', 'id' => 'txtEventName')) !!}
                     </div>
                 </div>
 
@@ -120,7 +125,7 @@
 
                     </div>
                     <div class="col-md-3 col-lg-3 ">
-                        {!! Form::textarea('txtDescription',null, array('class' => 'form-control', 'style' => 'height: 80px')) !!}
+                        {!! Form::textarea('txtDescription',null, array('class' => 'form-control', 'style' => 'height: 80px', 'id' => 'txtDescription')) !!}
                     </div>
                 </div>
 

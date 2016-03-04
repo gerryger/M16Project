@@ -79,6 +79,10 @@
     <script src="{{ asset('sbadmin/bower_components/datatables/media/js/dataTables.jqueryui.min.js') }}"></script>
     <script src="{{ asset('sbadmin/bower_components/datatables/media/js/jquery.dataTables.min.js') }}"></script>
 
+    <!-- Bootstrap Validator -->
+    <link rel="stylesheet" href="{{ asset('sbadmin/bootstrap-validator/bootstrapValidator.min.css') }}">
+    <script src="{{ asset('sbadmin/bootstrap-validator/bootstrapValidator.min.js') }}" type="text/javascript"></script>
+
 </head>
 <body>
     <div id="wrapper">
@@ -126,6 +130,61 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Landing Page<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Test 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Subhaus<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Test 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Pitstop<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Test 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Monroe<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Test 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Flux<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Test 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Test 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Events<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -133,9 +192,6 @@
                                 </li>
                                 <li>
                                     <a href="{{ url('/editevent') }}">Edit Event</a>
-                                </li>
-                                <li>
-                                    <a href="#">Delete Event</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

@@ -10,6 +10,6 @@ use App\Event;
 class FrontEndController extends Controller
 {
     public function index(){
-        return view('landingpage.index2', ['events' => Event::all()]);
+        return view('landingpage.index', ['events' => Event::all()]);
     }
 }

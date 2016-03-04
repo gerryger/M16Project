@@ -60,6 +60,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/editevent', 'MainController@editevent');
     Route::post('/doinsertevent', 'MainController@doinsertevent');
     Route::delete('/deleteevent/{event}', 'MainController@deleteevent');
+    Route::post('/doeditevent', 'MainController@doeditevent');
 
     //Routes for admin page [END]
 });

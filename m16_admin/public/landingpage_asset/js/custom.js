@@ -8,19 +8,39 @@ $(window).load(function() {
 });
 
 
+var slides = '';
+
 /* ----------------------------- 
 Backgroung slider
 ----------------------------- */
-//$(window).ready(function() {
-//	'use strict';
-//	$.vegas('slideshow', {
-//	  backgrounds:[
-//		{ src:'landingpage_asset/images/bg-slider/bg-1.jpg', fade:1000 },
-//		{ src:'landingpage_asset/images/bg-slider/bg-2.jpg', fade:1000 },
-//		{ src:'landingpage_asset/images/bg-slider/bg-3.jpg', fade:1000 }
-//	  ]
-//	})();
-//});
+$(window).ready(function() {
+	'use strict';
+
+	//if (isScrolledIntoView($('#section-home'))) {
+	//	$('body').vegas('slideshow',{
+	//		animation: 'kenburns',
+	//		slides: [
+	//			{ src:'landingpage_asset/images/bg-slider/bg-1.jpg' }
+	//		]
+	//	});
+	//}
+
+	//$.vegas('slideshow', {
+	//  backgrounds:[
+	//	{ src:'landingpage_asset/images/bg-slider/bg-1.jpg', fade:1000 },
+	//	{ src:'landingpage_asset/images/bg-slider/bg-2.jpg', fade:1000 },
+	//	{ src:'landingpage_asset/images/bg-slider/bg-3.jpg', fade:1000 }
+	//  ]
+	//})();
+
+	$('body').vegas({
+		slides: [
+
+		]
+	});
+
+	slides = $('body').vegas('options', 'slides');
+});
 
 
 				
@@ -249,15 +269,32 @@ function isScrolledIntoView(elem)
 	return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
-$(document).scroll(function(){
-	//if(isScrolledIntoView($('#section-flux')))
-	//{
-	//	$.vegas('slideshow',{
-	//		backgrounds: [
-	//			{ src: 'landingpage_asset/images/_fluxLogo.png', fade: 1000}
-	//		]
-	//	});
-	//}
+$(document).scroll(function() {
+
+
+	if (isScrolledIntoView($('#section-home'))) {
+		slides.push({ src: 'landingpage_asset/images/bg-slider/bg-1.jpg'});
+	}
+
+	if (isScrolledIntoView($('#section-flux'))) {
+		slides.push({ src: 'landingpage_asset/images/_fluxLogo.png'});
+	}
+
+	if (isScrolledIntoView($('#section-subhaus'))){
+		slides.push({ src: 'landingpage_asset/images/_subhausLogo.png'});
+	}
+
+	if (isScrolledIntoView($('#section-pitstop'))){
+		slides.push({ src: 'landingpage_asset/images/_pitstopLogo.png'});
+	}
+
+	if (isScrolledIntoView($('#section-monroe'))){
+		slides.push({ src: 'landingpage_asset/images/bg-slider/bg-1.jpg'});
+	}
+
+	$('body').vegas('options', 'slides', slides)
+		.vegas('options', 'transition', 'fade')
+		.vegas('jump', slides.length - 1);
 
 	//if($(this).scrollTop() >= $('#section-subhaus').position().top){
 	//	alert('Subhaus section');

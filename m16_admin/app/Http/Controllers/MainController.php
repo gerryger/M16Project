@@ -59,4 +59,30 @@ class MainController extends Controller
    public function editevent(){
        return view('editevent', ['events' => Event::all()]);
    }
+
+   public function doeditevent(Request $request){
+       $validator = Validator::make($request->all(), [
+           'page' => 'required',
+           'txtEventName' => 'required',
+           'txtStartDate' => 'required',
+           'txtEndDate' => 'required|different:txtStartDate',
+           'txtDescription' => 'required'
+       ]);
+
+       if($validator->fails()){
+           return redirect('/editevent')->withInput()->withErrors($validator);
+       }else{
+           $event = Event::find($request->eventID);
+
+           $event->ev_name = $request->txtEventName;
+           $event->ev_page = $request->page;
+           $event->ev_start = $request->txtStartDate;
+           $event->ev_end = $request->txtEndDate;
+           $event->ev_desc = $request->txtDescription;
+
+           $event->save();
+
+           return redirect('/editevent');
+       }
+   }
 }

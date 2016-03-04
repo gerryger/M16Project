@@ -17,7 +17,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<!--=== Other CSS files ===-->
 	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/animate.css') }}" />
-	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/jquery.vegas.css') }}" />
+	{{--<link rel="stylesheet" href="{{ asset('landingpage_asset/css/jquery.vegas.css') }}" />--}}
+	<link rel="stylesheet" href="{{ asset('landingpage_asset/js/vegas/vegas.css') }}" />
 	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/baraja.css') }}" />
 	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/jquery.bxslider.css') }}" />
 	
@@ -88,10 +89,10 @@
 			<div class="section-overlay"></div>
 			<div class="container home">
 				<div class="row">
-					<h1 class="well-come"><img src="{{ asset('landingpage_asset/images/_m16logo.png') }}"></h1>
+					<h1 class="well-come"><img src="{{ asset('landingpage_asset/images/_m16logo.png') }}" width="570px" height="300px"></h1>
 					
 					<div class="col-md-8 col-md-offset-2">
-						<p class="intro-message">M16 District - One Stop Entertainment, <i>where all your needs will be fulfilled</i></p>
+						<p class="intro-message animated2">One Stop Entertainment, <i>where all your needs will be fulfilled</i></p>
 						
 						<div class="col-md-10 col-md-offset-1">
 							<a>
@@ -116,8 +117,16 @@
 	<section id="section-subhaus" class="subhaus-wrap">
 		<div class="container subhaus center">
 			<div class="row">
-				<div class="col-lg-12">
-					<h1>Subhaus Gallery</h1>	
+				<div class="col-md-12 col-lg-12">
+					<h1>Subhaus Gallery</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<p>asdasdasdasdasdadadadadasdasdasdasdasdasdas</p>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<h1>Slider</h1>
 				</div>
 			</div>
 		</div>
@@ -136,10 +145,6 @@
 	</section>
 	<!--=== pitstop section Ends ===-->
 
-	{{--<br/>--}}
-	{{--<br/>--}}
-	{{--<br/>--}}
-
 	<!--=== flux section Starts ===-->
 	<section id="section-flux" class="section-wrap">
 		<div class="container big-flux center">
@@ -152,10 +157,6 @@
 	</section>
 	<!--=== flux section Ends ===-->
 
-	{{--<br/>--}}
-	{{--<br/>--}}
-	{{--<br/>--}}
-	
 	<!--=== monroe section Starts ===-->
 	<section id="section-monroe" class="monroe-wrap">
 		<div class="container monroe center">
@@ -255,7 +256,8 @@
 
 <!--==== Slider and Card style plugin ====-->
 <script type="text/javascript" src="js/jquery.baraja.js"></script>
-<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.vegas.min.js') }}"></script>
+{{--<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.vegas.min.js') }}"></script>--}}
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/vegas/vegas.js') }}"></script>
 <script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.bxslider.min.js') }}"></script>
 
 <!--==== MailChimp Widget plugin ====-->
