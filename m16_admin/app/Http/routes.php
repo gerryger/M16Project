@@ -51,16 +51,26 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/m16admin', 'LoginController@index');
     Route::get('/main', 'MainController@index');
 
-    //login route
+    //login and logout route
     Route::post('/login', 'LoginController@login');
-
     Route::get('/logout', 'LoginController@logout');
 
+    //Event Route
     Route::get('/newevent', 'MainController@newevent');
     Route::get('/editevent', 'MainController@editevent');
     Route::post('/doinsertevent', 'MainController@doinsertevent');
     Route::delete('/deleteevent/{event}', 'MainController@deleteevent');
     Route::post('/doeditevent', 'MainController@doeditevent');
+
+    //Add admin route
+    Route::get('/manageadmin', 'MainController@manageadmin');
+    Route::post('/doaddadmin', 'MainController@doaddadmin');
+
+    //Delete admin
+    Route::post('/dodeleteadmin', 'MainController@dodeleteadmin');
+
+    //Update Admin
+    Route::post('/doeditadmin', 'MainController@doeditadmin');
 
     //Routes for admin page [END]
 });

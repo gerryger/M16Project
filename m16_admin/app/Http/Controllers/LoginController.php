@@ -17,7 +17,7 @@ class LoginController extends Controller
         if (session('login') != null) {
             return redirect('/main');
         } else {
-            return view('login');
+            return view('admin.login');
         }
     }
 

@@ -5,22 +5,26 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Validator;
 
 use App\Event;
+use App\Admin;
 
 class MainController extends Controller
 {
+   //GET
    public function index(){
        if (session('login') != null) {
-           return view('home');
+           return view('admin.home');
        }else{
-           return view('login');
+           return view('admin.login');
        }
    }
 
+   //GET
    public function newevent(){
-       return view('newevent', ['events' => Event::all()]);
+       return view('admin.newevent', ['events' => Event::all()]);
    }
 
    public function deleteevent(Request $request, Event $event){
@@ -31,6 +35,7 @@ class MainController extends Controller
        return redirect('/newevent');
    }
 
+   //POST
    public function doinsertevent(Request $request){
        $validator = Validator::make($request->all(), [
            'txtEventName' => 'required',
@@ -56,10 +61,12 @@ class MainController extends Controller
        }
    }
 
+   //GET
    public function editevent(){
-       return view('editevent', ['events' => Event::all()]);
+       return view('admin.editevent', ['events' => Event::all()]);
    }
 
+   //POST
    public function doeditevent(Request $request){
        $validator = Validator::make($request->all(), [
            'page' => 'required',
@@ -83,6 +90,85 @@ class MainController extends Controller
            $event->save();
 
            return redirect('/editevent');
+       }
+   }
+
+   //GET
+   public function manageadmin(){
+       return view('admin.manageadmin', ['admins' => Admin::all()]);
+   }
+
+   //POST
+   public function doaddadmin(Request $request){
+       if($request != null){
+           $name = $request->name;
+           $email = $request->email;
+           $pass = $request->pass;
+
+           $admin = new Admin();
+           $admin->name = $name;
+           $admin->email = $email;
+           $admin->password = $pass;
+
+
+           if($admin->save()){
+               $response = array(
+                   'status'=>true,
+                   'msg'=>'Success adding new admin'
+               );
+           }else{
+               $response = array(
+                   'status'=>false,
+                   'msg'=>'FAILED adding new admin'
+               );
+           }
+
+           return Response::json($response);
+       }
+   }
+
+   //POST
+   public function dodeleteadmin(Request $request){
+       if($request != null){
+           $admin = Admin::find($request->admin_id);
+
+           if($admin->delete()){
+                $response = array(
+                    'status'=>true,
+                    'msg'=>'Delete Admin Successful'
+                );
+           }else{
+               $response = array(
+                   'status'=>false,
+                   'msg'=>'FAILED Delete Admin'
+               );
+           }
+
+           return Response::json($response);
+       }
+   }
+
+   //POST
+   public function doeditadmin(Request $request){
+       if($request != null){
+           $admin = Admin::find($request->id);
+
+           $admin->name = $request->name;
+           $admin->email = $request->email;
+           $admin->password = $request->pass;
+
+           if($admin->save()){
+               $response = array(
+                   'status'=>true,
+                   'msg'=>'Update Admin Successful'
+               );
+           }else{
+               $response = array(
+                   'status'=>false,
+                   'msg'=>'FAILED Update Admin'
+               );
+           }
+           return Response::json($response);
        }
    }
 }

@@ -196,6 +196,9 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                        <li>
+                            <a href="{{ url('/manageadmin') }}"><i class="fa fa-bar-chart-o fa-fw"></i> Manage Admin</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
