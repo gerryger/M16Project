@@ -13,7 +13,7 @@
     <div class="panel panel-primary" style="margin-top: 20px">
         <div class="panel-heading"><strong>Admins</strong></div>
         <div class="panel-body">
-            <table id="adminTable" class="table table-hover table-striped">
+            <table id="adminTable" class="table table-hover table-striped table-responsive">
                 <thead>
                     <th>Name</th>
                     <th>Email</th>

@@ -54,6 +54,7 @@ Route::group(['middleware' => ['web']], function () {
     //login and logout route
     Route::post('/login', 'LoginController@login');
     Route::get('/logout', 'LoginController@logout');
+    Route::post('/doforgotpassword', 'LoginController@doforgotpassword');
 
     //Event Route
     Route::get('/newevent', 'MainController@newevent');

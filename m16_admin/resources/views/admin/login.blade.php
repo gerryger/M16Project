@@ -11,7 +11,7 @@
             <div class="panel-heading">
 
                 <div class="panel-title">Sign In</div>
-                <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                <div style="float:right; font-size: 80%; position: relative; top:-10px"><a data-toggle="modal" data-target="#forgotPasswordModal">Forgot password?</a></div>
 
             </div>
 
@@ -90,4 +90,53 @@
         {{--</div>--}}
         {{----}}
     {{--</div>--}}
+
+    {{-- forgotPasswordModal [START] --}}
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Forgot Password</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="form-horizontal">
+                        {{ csrf_field() }}
+                        <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <input type="email" class="form-control" id="txtEmail" placeholder="Input Your Email Here">
+                            <p class="help-block">Temporary Password Will be Sent to Your Email</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" id="btnForgotPassword" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- forgotPasswordModal [END] --}}
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#btnForgotPassword').click(function(e){
+                e.preventDefault();
+
+                $.ajax({
+                    type:'POST',
+                    url: 'doforgotpassword',
+                    dataType: 'json',
+                    data: {email: $('#txtEmail').val().trim(), _token: $('input[name=_token]').val()},
+                    success: function(res){
+                        if(res){
+                            window.location.reload();
+                        }else{
+                            alert(res.msg);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 @endsection
