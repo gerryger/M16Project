@@ -100,19 +100,20 @@
                     <h4 class="modal-title" id="myModalLabel">Forgot Password</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="#" class="form-horizontal">
-                        {{ csrf_field() }}
+                    {!! Form::open(array('class'=>'form-horizontal')) !!}
                         <div class="form-group">
                             <label class="control-label">Email</label>
                             <input type="email" class="form-control" id="txtEmail" placeholder="Input Your Email Here">
                             <p class="help-block">Temporary Password Will be Sent to Your Email</p>
                         </div>
-                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     <button type="button" id="btnForgotPassword" class="btn btn-primary">Save changes</button>
+                    {{--{!! Form::submit('Submit', array('class'=>'"btn btn-primary', 'id'=>'btnForgotPassword')) !!}--}}
                 </div>
+                {!! Form::close() !!}
             </div>
         </div>
     </div>
@@ -120,11 +121,13 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
+            $('#txtEmail').val('');
+
             $('#btnForgotPassword').click(function(e){
                 e.preventDefault();
 
                 $.ajax({
-                    type:'POST',
+                    type:'post',
                     url: 'doforgotpassword',
                     dataType: 'json',
                     data: {email: $('#txtEmail').val().trim(), _token: $('input[name=_token]').val()},

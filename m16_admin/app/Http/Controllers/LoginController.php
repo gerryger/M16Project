@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Validator;
 
 use App\Admin;
@@ -55,15 +56,31 @@ class LoginController extends Controller
     public function doforgotpassword(Request $request){
         if($request != null){
             $admin = Admin::where('email', $request->email);
-            $email = $request->email;
+            //$email = $request->email;
             $tempPass = 'asdASD123!@#';
 
-            Mail::send('emails.forgotpassword', ['admin'=>$admin, 'newpass'=>$tempPass], function($m) use ($admin){
+            if(
+                Mail::send('emails.forgotpassword', ['admin'=>$admin, 'newpass'=>$tempPass], function($m) use ($admin){
                 $m->from('heartnett07@hotmail.com', 'Admin');
                 $m->to('gabrielcaesario@gmail.com', $admin->name);
                 $m->subject('TEST EMAIL');
-            });
+                })
+            ){
+                $response = array(
+                    'status'=> true,
+                    'msg'=> 'sucess'
+                );
+            }else{
+                $response = array(
+                    'status'=> false,
+                    'msg'=> 'FAILED'
+                );
+            }
+
+            return Response::json($response);
         }
+//        }
+        //echo 'asd';
     }
 
 }
