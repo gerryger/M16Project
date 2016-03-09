@@ -38,6 +38,9 @@
     <link href="{{ asset('sbadmin/bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet">
     <link href="{{ asset('sbadmin/bower_components/datatables/media/css/jquery.dataTables_themeroller.css') }}" rel="stylesheet">
 
+    <!-- Bootstrap Validator -->
+    <link rel="stylesheet" href="{{ asset('sbadmin/bootstrap-validator/bootstrapValidator.min.css') }}">
+
     <!-- jQuery -->
     <!-- <script src="../resources/assets/sbadmin/bower_components/jquery/dist/jquery.min.js"></script> -->
     <script src="{{ asset('sbadmin/bower_components/jquery/dist/jquery.min.js') }}"></script>
@@ -80,8 +83,9 @@
     <script src="{{ asset('sbadmin/bower_components/datatables/media/js/jquery.dataTables.min.js') }}"></script>
 
     <!-- Bootstrap Validator -->
-    <link rel="stylesheet" href="{{ asset('sbadmin/bootstrap-validator/bootstrapValidator.min.css') }}">
+
     <script src="{{ asset('sbadmin/bootstrap-validator/bootstrapValidator.min.js') }}" type="text/javascript"></script>
+    {{--<script type="text/javascript" src="{{ asset('sbadmin/bootstrap-validator-master/dist/validator.min.js') }}"></script>--}}
 
 </head>
 <body>
@@ -129,6 +133,8 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
+                         <?php $page = Session::get('page') ?>
+                        @if($page == 'l')
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Landing Page<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -140,6 +146,8 @@
                                 </li>
                             </ul>
                         </li>
+                        @endif
+                        @if($page == 's')
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Subhaus<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -151,6 +159,8 @@
                                 </li>
                             </ul>
                         </li>
+                        @endif
+                        @if($page == 'p')
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Pitstop<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -162,6 +172,8 @@
                                 </li>
                             </ul>
                         </li>
+                        @endif
+                        @if($page == 'm')
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Monroe<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -173,6 +185,8 @@
                                 </li>
                             </ul>
                         </li>
+                        @endif
+                        @if($page == 'f')
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Flux<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -184,21 +198,88 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Events<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="{{ url('/newevent') }}">Add Event</a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/editevent') }}">Edit Event</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="{{ url('/manageadmin') }}"><i class="fa fa-bar-chart-o fa-fw"></i> Manage Admin</a>
-                        </li>
+                        @endif
+
+                        {{-- Access Right For Superadmin [START]--}}
+                             @if($page == '*')
+                             <li>
+                                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Landing Page<span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                     <li>
+                                         <a href="#">Test 1</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Test 2</a>
+                                     </li>
+                                 </ul>
+                             </li>
+
+                             <li>
+                                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Subhaus<span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                     <li>
+                                         <a href="#">Test 1</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Test 2</a>
+                                     </li>
+                                 </ul>
+                             </li>
+
+                             <li>
+                                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Pitstop<span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                     <li>
+                                         <a href="#">Test 1</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Test 2</a>
+                                     </li>
+                                 </ul>
+                             </li>
+
+                             <li>
+                                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Monroe<span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                     <li>
+                                         <a href="#">Test 1</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Test 2</a>
+                                     </li>
+                                 </ul>
+                             </li>
+
+                             <li>
+                                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Flux<span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                     <li>
+                                         <a href="#">Test 1</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Test 2</a>
+                                     </li>
+                                 </ul>
+                             </li>
+
+                            <li>
+                                <a href="{{ url('/manageadmin') }}"><i class="fa fa-bar-chart-o fa-fw"></i> Manage Admin</a>
+                            </li>
+                            @endif
+                        {{-- Access Right For Superadmin [END]--}}
+
+                             <li>
+                                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Events<span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                     <li>
+                                         <a href="{{ url('/newevent') }}">Add Event</a>
+                                     </li>
+                                     <li>
+                                         <a href="{{ url('/editevent') }}">Edit Event</a>
+                                     </li>
+                                 </ul>
+                                 <!-- /.nav-second-level -->
+                             </li>
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

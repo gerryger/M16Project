@@ -38,7 +38,7 @@ class LoginController extends Controller
 
             if(count($admin) > 0){
                 //create session
-                session(['login' => $admin->name]);
+                session(['login' => $admin->name, 'page' => $admin->page]);
                 return redirect('/main');
             }else{
                 return redirect('/')->withInput($request->all())->withErrors('Incorrect Credentials!');
@@ -53,34 +53,39 @@ class LoginController extends Controller
         }
     }
 
-    public function doforgotpassword(Request $request){
-        if($request != null){
+    public function doforgotpassword(Request $request)
+    {
+        if ($request != null) {
             $admin = Admin::where('email', $request->email);
             //$email = $request->email;
             $tempPass = 'asdASD123!@#';
 
-            if(
-                Mail::send('emails.forgotpassword', ['admin'=>$admin, 'newpass'=>$tempPass], function($m) use ($admin){
-                $m->from('heartnett07@hotmail.com', 'Admin');
-                $m->to('gabrielcaesario@gmail.com', $admin->name);
-                $m->subject('TEST EMAIL');
-                })
-            ){
+            if (
+//            Mail::send('emails.forgotpassword', ['admin' => $admin, 'newpass' => $tempPass], function ($m) use ($admin) {
+//                $m->from('heartnett07@hotmail.com', 'Admin');
+//                $m->to('gabrielcaesario@gmail.com', $admin->name);
+//                $m->subject('TEST EMAIL');
+//            })
+            Mail::raw('Text to e-mail', function($message){
+                $message->from('heartnett07@hotmail.com', 'TESTTT');
+
+                $message->to('gabrielcaesario@gmail.com')->cc('gabriel@korindo.co.id');
+            })
+            ) {
                 $response = array(
-                    'status'=> true,
-                    'msg'=> 'sucess'
+                    'status' => true,
+                    'msg' => 'sucess'
                 );
-            }else{
+            } else {
                 $response = array(
-                    'status'=> false,
-                    'msg'=> 'FAILED'
+                    'status' => false,
+                    'msg' => 'FAILED'
                 );
             }
 
             return Response::json($response);
         }
-//        }
+
         //echo 'asd';
     }
-
 }

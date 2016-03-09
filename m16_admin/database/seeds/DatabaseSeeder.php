@@ -12,10 +12,14 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UserTableSeeder::class);
-        DB::table('admins')->insert([
-            'name'=>'admin',
-            'email'=>'admin',
-            'password'=>'admin'
-        ]);
+
+        factory(App\Event::class, 20)->create();
+        factory(App\Admin::class, 5)->create();
+
+//        DB::table('admins')->insert([
+//            'name'=>'admin',
+//            'email'=>'admin',
+//            'password'=>'admin'
+//        ]);
     }
 }

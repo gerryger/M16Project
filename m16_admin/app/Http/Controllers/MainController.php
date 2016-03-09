@@ -41,7 +41,9 @@ class MainController extends Controller
            'txtEventName' => 'required',
            'txtStartDate' => 'required',
            'txtEndDate' => 'required',
-           'txtDescription' => 'required'
+           'txtDescription' => 'required',
+           'txtEventPlace' => 'required',
+           'image' => 'required|mimes:png,jpg,PNG,JPG'
        ]);
 
        if($validator->fails()){
@@ -49,11 +51,19 @@ class MainController extends Controller
        }else{
            $event = new Event();
 
+           $dt = new \DateTime();
+
+           $imgName = $dt->format('Ymd').'.'.$request->file('image')->getClientOriginalExtension();
+
            $event->ev_name = $request->txtEventName;
            $event->ev_page = $request->page;
+           $event->ev_place = $request->txtEventPlace;
            $event->ev_start = $request->txtStartDate;
            $event->ev_end = $request->txtEndDate;
+           $event->ev_img = $imgName;
            $event->ev_desc = $request->txtDescription;
+
+           $request->file('image')->move(base_path().'/public/sbadmin/eventImages/', $imgName);
 
            $event->save();
 
@@ -104,11 +114,13 @@ class MainController extends Controller
            $name = $request->name;
            $email = $request->email;
            $pass = $request->pass;
+           $page = $request->page;
 
            $admin = new Admin();
            $admin->name = $name;
            $admin->email = $email;
            $admin->password = $pass;
+           $admin->page = $request->page;
 
 
            if($admin->save()){

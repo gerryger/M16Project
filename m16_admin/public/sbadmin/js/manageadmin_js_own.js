@@ -13,6 +13,28 @@ $(document).ready(function(){
     onClickBtnCancel();
 
     onClickBtnUpdateAdmin();
+
+    //$('#addAdminForm').bootstrapValidator({
+    //    fields:{
+    //        txtAdminName:
+    //        {
+    //            validators:
+    //            {
+    //                noEmpty:
+    //                {
+    //                    message: 'Admin Name Required!'
+    //                },
+    //                stringLength:
+    //                {
+    //                    max: 25,
+    //                    min: 5,
+    //                    message: 'Admin Name must be 5-25 characters!'
+    //                }
+    //            }
+    //        }
+    //    }
+    //});
+
 });
 
 function init() {
@@ -30,28 +52,54 @@ function init() {
     }
 }
 
+
+
 function onClickBtnAddAdmin(){
     $('#btnAddAdmin').click(function(e){
         e.preventDefault();
 
-        var name = $('#txtAdminName').val();
-        var email = $('#txtAdminEmail').val();
-        var pass = $('#txtAdminPassword').val();
-        var _token = $('input[name=_token]').val();
+        var emailRegex = '.+\@.+\..+';
 
-        $.ajax({
-            type:'POST',
-            url: 'doaddadmin',
-            dataType: 'json',
-            data: {name: name, email: email, pass: pass, _token: _token},
-            success: function(res){
-                if(res) {
-                    window.location.reload();
-                } else {
-                    alert(res.msg);
-                }
+        //$('#addAdminForm').bootstrapValidator('validate');
+            var name = $('#txtAdminName').val();
+            var email = $('#txtAdminEmail').val();
+            var pass = $('#txtAdminPassword').val();
+            var page = $('#txtPage').val();
+            var _token = $('input[name=_token]').val();
+
+            if(name == ''){
+                alert('Admin name required!');
+                //$('#grpAdminName').addClass('has-error');
+            } else if(email == '' ){
+                alert('Email required!');
+                //$('#grpAdminEmail').addClass('has-error');
+            }else if(!email.match(emailRegex)){
+                alert('Invalid email format!');
+                //$('#grpAdminEmail').addClass('has-error');
+
+            }else if(pass == ''){
+                alert('Pasword required!');
+                //$('#grpAdminPass').addClass('has-error');
+            }else if(page == ''){
+                alert('Page required!');
+                //$('#grpAdminPage').addClass('has-error');
             }
-        });
+            else {
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'doaddadmin',
+                    dataType: 'json',
+                    data: {name: name, email: email, pass: pass, page: page, _token: _token},
+                    success: function (res) {
+                        if (res) {
+                            window.location.reload();
+                        } else {
+                            alert(res.msg);
+                        }
+                    }
+                });
+            }
     });
 }
 
@@ -149,12 +197,16 @@ function onClickBtnUpdateAdmin(){
     });
 }
 
+
+
+
 function clearAll(){
     $('#txtAdminID_hidden').val('');
     $('#txtAdminName').val('');
     $('#txtAdminEmail').val('');
     $('#txtAdminPassword').val('');
 }
+
 
 
 

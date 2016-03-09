@@ -100,7 +100,6 @@
                     <h4 class="modal-title" id="myModalLabel">Forgot Password</h4>
                 </div>
                 <div class="modal-body">
-                    {!! Form::open(array('class'=>'form-horizontal')) !!}
                         <div class="form-group">
                             <label class="control-label">Email</label>
                             <input type="email" class="form-control" id="txtEmail" placeholder="Input Your Email Here">
@@ -111,9 +110,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     <button type="button" id="btnForgotPassword" class="btn btn-primary">Save changes</button>
-                    {{--{!! Form::submit('Submit', array('class'=>'"btn btn-primary', 'id'=>'btnForgotPassword')) !!}--}}
                 </div>
-                {!! Form::close() !!}
             </div>
         </div>
     </div>

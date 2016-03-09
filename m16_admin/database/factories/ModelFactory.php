@@ -25,7 +25,7 @@ $factory->define(App\Admin::class, function (Faker\Generator $faker) {
         'name' => $faker->name,
         'page' => 'l',
         'email' => $faker->email,
-        'password' => bcrypt(str_random(10))
+        'password' => str_random(10)
     ];
 });
 
@@ -33,8 +33,10 @@ $factory->define(App\Event::class, function (Faker\Generator $faker) {
     return [
         'ev_name' => $faker->name,
         'ev_page' => 'l',
+        'ev_place' => '',
         'ev_start' => $faker->date('Y-m-d'),
         'ev_end' => $faker->date('Y-m-d'),
+        'ev_img' => '',
         'ev_desc' => $faker->paragraph
     ];
 });

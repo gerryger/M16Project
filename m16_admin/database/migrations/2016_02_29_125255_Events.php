@@ -16,8 +16,10 @@ class Events extends Migration
             $table->increments('id');
             $table->string('ev_name');
             $table->string('ev_page');
+            $table->string('ev_place');
             $table->string('ev_start');
             $table->string('ev_end');
+            $table->string('ev_img');
             $table->string('ev_desc');
             $table->timestamps();
         });
