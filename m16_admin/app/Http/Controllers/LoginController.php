@@ -61,16 +61,16 @@ class LoginController extends Controller
             $tempPass = 'asdASD123!@#';
 
             if (
-//            Mail::send('emails.forgotpassword', ['admin' => $admin, 'newpass' => $tempPass], function ($m) use ($admin) {
-//                $m->from('heartnett07@hotmail.com', 'Admin');
-//                $m->to('gabrielcaesario@gmail.com', $admin->name);
-//                $m->subject('TEST EMAIL');
-//            })
-            Mail::raw('Text to e-mail', function($message){
-                $message->from('heartnett07@hotmail.com', 'TESTTT');
+            Mail::send('emails.forgotpassword', ['admin' => $admin, 'newpass' => $tempPass], function ($m) use ($admin) {
+                $m->from('m16district@gmail.com', 'TESTTT');
+                $m->to('gabrielcaesario@gmail.com', $admin->name);
+                $m->subject('TEST EMAIL');
+            })
+            /*Mail::raw('Text to e-mail', function($message){
+                $message->from('m16district@gmail.com', 'TESTTT');
 
                 $message->to('gabrielcaesario@gmail.com')->cc('gabriel@korindo.co.id');
-            })
+            })*/
             ) {
                 $response = array(
                     'status' => true,

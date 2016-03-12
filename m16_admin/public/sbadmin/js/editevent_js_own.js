@@ -14,9 +14,11 @@ $(document).ready(function(){
         var eventID = id;
         var eventName = cells.eq(0).text();
         var eventPage = cells.eq(1).text();
-        var eventStart = cells.eq(2).text();
-        var eventEnd = cells.eq(3).text();
-        var eventDesc = cells.eq(4).text();
+        var eventPlace = cells.eq( 2).text();
+        var eventStart = cells.eq(3).text();
+        var eventEnd = cells.eq(4).text();
+        var eventImage = cells.eq(5).text();
+        var eventDesc = cells.eq(6).text();
 
         //alert(eventID.val());
 
@@ -37,8 +39,10 @@ $(document).ready(function(){
             $('#page').val('f');
         }
         $('#txtEventName').val(eventName);
+        $('#txtEventPlace').val(eventPlace);
         $('#txtStartDate').val(eventStart);
         $('#txtEndDate').val(eventEnd);
+        $('#txtEventImage').val(eventImage);
         $('#txtDescription').val(eventDesc);
 
 

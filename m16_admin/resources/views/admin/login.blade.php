@@ -130,7 +130,8 @@
                     data: {email: $('#txtEmail').val().trim(), _token: $('input[name=_token]').val()},
                     success: function(res){
                         if(res){
-                            window.location.reload();
+                            //window.location.reload();
+                            alert(res.msg);
                         }else{
                             alert(res.msg);
                         }

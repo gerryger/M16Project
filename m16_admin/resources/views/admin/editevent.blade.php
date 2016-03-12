@@ -13,8 +13,10 @@
                     <thead>
                         <th>Event Name</th>
                         <th>Page</th>
+                        <th>Place</th>
                         <th>Start</th>
                         <th>End</th>
+                        <th>Image</th>
                         <th>Description</th>
                         <th>Action</th>
                     </thead>
@@ -35,8 +37,10 @@
                             @else
                                 <td>{{ $event->ev_page }}</td>
                             @endif
+                            <td>{{ $event->ev_place }}</td>
                             <td>{{ $event->ev_start }}</td>
                             <td>{{ $event->ev_end }}</td>
+                            <td>{{ $event->ev_img }}</td>
                             <td>{{ $event->ev_desc  }}</td>
                             <td>
                                 <button type="submit" id="edit-event-{{ $event->id }}" class="btn btn-primary btnedit">
@@ -88,6 +92,16 @@
                     </div>
                 </div>
 
+                {{-- Event Place --}}
+                <div class="form-group">
+                    <div class="col-md-3 col-lg-3 ">
+                        {!! Form::label('eventplace', 'Event Place', array('class'=>'control-label')) !!}
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        {!! Form::text('txtEventPlace', null, array('class' => 'form-control', 'id' => 'txtEventPlace')) !!}
+                    </div>
+                </div>
+
                 {{-- Start Date --}}
                 <div class="form-group">
                     <div class="col-md-3 col-lg-3 ">
@@ -115,6 +129,16 @@
                                             <span id="endDateIcon" class="glyphicon glyphicon-calendar"></span>
                                         </span>
                         </div>
+                    </div>
+                </div>
+
+                {{-- Image --}}
+                <div class="form-group">
+                    <div class="col-md-3 col-lg-3 ">
+                        {!! Form::label('image', 'Image', array('class'=>'control-label')) !!}
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        {!! Form::file('image', null, array('class'=>'txtEventImage')) !!}
                     </div>
                 </div>
 
