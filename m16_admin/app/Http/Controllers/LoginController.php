@@ -55,31 +55,42 @@ class LoginController extends Controller
 
     public function doforgotpassword(Request $request)
     {
+
         if ($request != null) {
-            $admin = Admin::where('email', $request->email);
+            $admin = Admin::where('email', $request->email)->first();
             //$email = $request->email;
-            $tempPass = 'asdASD123!@#';
+            $tempPass = str_random(5);
 
-            if (
-            Mail::send('emails.forgotpassword', ['admin' => $admin, 'newpass' => $tempPass], function ($m) use ($admin) {
-                $m->from('m16district@gmail.com', 'TESTTT');
-                $m->to('gabrielcaesario@gmail.com', $admin->name);
-                $m->subject('TEST EMAIL');
-            })
-            /*Mail::raw('Text to e-mail', function($message){
-                $message->from('m16district@gmail.com', 'TESTTT');
+            //print_r($admin);
 
-                $message->to('gabrielcaesario@gmail.com')->cc('gabriel@korindo.co.id');
-            })*/
-            ) {
-                $response = array(
-                    'status' => true,
-                    'msg' => 'sucess'
-                );
-            } else {
+            if($admin != null) {
+                if (
+                Mail::send('emails.forgotpassword', ['admin' => $admin, 'newpass' => $tempPass], function ($m) use ($admin) {
+                    $m->from('m16district@gmail.com', 'TESTTT');
+                    $m->to($admin->email);
+                    $m->subject('TEST EMAIL');
+                })
+
+                ) {
+                    //update password admin
+                    $admin->password = $tempPass;
+
+                    $admin->save();
+
+                    $response = array(
+                        'status' => true,
+                        'msg' => 'sucess'
+                    );
+                } else {
+                    $response = array(
+                        'status' => false,
+                        'msg' => 'FAILED'
+                    );
+                }
+            }else{
                 $response = array(
                     'status' => false,
-                    'msg' => 'FAILED'
+                    'msg' => 'USER NOT FOUND!'
                 );
             }
 
@@ -88,4 +99,14 @@ class LoginController extends Controller
 
         //echo 'asd';
     }
+
+
+
+
+
+    /*Mail::raw('Text to e-mail', function($message){
+                $message->from('m16district@gmail.com', 'TESTTT');
+
+                $message->to('gabrielcaesario@gmail.com')->cc('gabriel@korindo.co.id');
+            })*/
 }

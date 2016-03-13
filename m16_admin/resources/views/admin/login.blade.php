@@ -110,6 +110,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     <button type="button" id="btnForgotPassword" class="btn btn-primary">Save changes</button>
+                    <img src="{{ asset('landingpage_asset/images/loading.gif') }}" id="imgLoading" style="display:none" />
                 </div>
             </div>
         </div>
@@ -123,16 +124,22 @@
             $('#btnForgotPassword').click(function(e){
                 e.preventDefault();
 
+                $('#imgLoading').show();
+                $(this).hide();
+
                 $.ajax({
                     type:'post',
                     url: 'doforgotpassword',
                     dataType: 'json',
                     data: {email: $('#txtEmail').val().trim(), _token: $('input[name=_token]').val()},
                     success: function(res){
+                        $('#imgLoading').hide();
+                        $(this).show();
                         if(res){
-                            //window.location.reload();
-                            alert(res.msg);
+                            window.location.reload();
+                            //alert(res.msg);
                         }else{
+
                             alert(res.msg);
                         }
                     }
