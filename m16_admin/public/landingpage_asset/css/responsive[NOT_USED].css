@@ -8,7 +8,21 @@
 	.navbar-nav > li > a {
 		font-size: 14px !important;
 	}
+	
+	.single-pricing {
+		margin-bottom: 60px;
+	}
+	
+	.project-photo, .project-details {
+		margin-bottom: 60px;
+	}
+	
+
 }
+
+
+
+
 
 /* --------- Styles for Screen width between 768px To 1023px -------- */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -31,6 +45,45 @@
 		padding-left: 30px;
 	}
 	
+
+	/* features */
+	.container.features {
+		padding-bottom: 120px;
+	}
+	
+	.single-feature .feature-title {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0 5px;
+	}
+
+	.single-feature .feature-text {
+		display:none;
+	}
+
+	/* services */
+	.service {
+		margin-bottom: 20px;
+	}
+
+	.service .service-description {
+		margin: auto;
+		max-width: 480px;
+	}
+
+	/* Screenshots */
+	.figure {
+		width: 33.333%;
+	}
+
+	.figure-large {
+		width: 66.6667%;
+	}
+
+	/* Pricing table */
+	.single-pricing-wrap {
+		margin-bottom: 40px;
+	}
 }
 
 
@@ -52,6 +105,7 @@
 		line-height: 32px;
 	}
 
+
 	#section-feature {
 		padding-top: 140px;
 		padding-bottom: 40px;
@@ -62,14 +116,43 @@
 		font-size: 48px;
 	}
 	
-	/* Sreenshots */
+	.features-control {
+		float: left;
+		height: 160px;
+		width: 42px;
+		bottom: 340px;
+	}
 
+	.features-control .control-icon {
+		position: relative;
+		left: 2px !important;
+		float: left;
+		margin-bottom: 8px;
+	}
+
+	/* Sreenshots */
+	.screenshots .col-xs-6 {
+		width: 100% !important;
+	}
+	
+		#subscription-form  .input-email {
+		width: 320px;
+	}
 }
 
 
 /* --------- Styles for Screen width Smaller than 360px -------- */
 @media only screen and (max-width: 360px) {
+	.client-photos .photo-hold {
+		width: 80px;
+		height: 80px;
+		margin-bottom: 16px;
+	}
 
+	/* Subscription Form */
+	#subscription-form  .input-email {
+		width: 250px;
+	}
 }
 
 

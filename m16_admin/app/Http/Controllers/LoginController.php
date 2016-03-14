@@ -29,19 +29,21 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
 
+        $email = $request->get('email');
+        $password = $request->get('password');
 
         if($validator->fails()){
-            return redirect('/')->withInput()->withErrors($validator);
+            return redirect('/m16admin')->withInput()->withErrors($validator);
         }else{
-            $admin = Admin::where('email', $request->email)
-                ->where('password', $request->password)->first();
+            $admin = Admin::where('email', $email)
+                ->where('password', $password)->first();
 
             if(count($admin) > 0){
                 //create session
                 session(['login' => $admin->name, 'page' => $admin->page]);
                 return redirect('/main');
             }else{
-                return redirect('/')->withInput($request->all())->withErrors('Incorrect Credentials!');
+                return redirect('/m16admin')->withInput($request->all())->withErrors('Incorrect Credentials!');
             }
         }
     }

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<title>M16 - landing page</title>
+	<title>M16 District - Home</title>
 	
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,6 @@
 	<!--=== Other CSS files ===-->
 	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/animate.css') }}" />
 	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/jquery.vegas.css') }}" />
-	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/baraja.css') }}" />
 	<link rel="stylesheet" href="{{ asset('landingpage_asset/css/jquery.bxslider.css') }}" />
 	
 	<!--=== Main Stylesheets ===-->
@@ -62,11 +61,11 @@
 						
 						<!-- Main Navigation menu Starts -->
 						<div class="collapse navbar-collapse navbar-responsive-collapse">
-							<ul class="nav navbar-nav navbar-right">	
-								<li><a href="#section-subhaus">Subhaus</a></li>
-								<li><a href="#section-pitstop">Pitstop</a></li>
-								<li><a href="#section-flux">Flux</a></li>
-								<li><a href="#section-monroe">Monroe</a></li>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="current"><a href="#header">M16</a></li>
+								<li><a href="#section-aboutus">About Us</a></li>	
+								<li><a href="#section-events">What's On!</a></li>
+								<li><a href="#section-location">Location</a></li>
 							</ul>
 						</div>
 						<!-- Main Navigation menu ends-->
@@ -84,100 +83,56 @@
 				<div class="row">
 					<h1 class="well-come"><img src="{{ asset('landingpage_asset/images/_m16logo.png') }}"></h1>
 					
-					<div class="col-md-8 col-md-offset-2">
-						<p class="intro-message">M16 District - One Stop Entertainment, <i>where all your needs will be fulfilled<i></p>
+					<div class="col-md-12">
+						<p class="intro-message">One Stop Entertainment, <i>where all your needs will be fulfilled<i></p>
 						
-						<div class="col-md-10 col-md-offset-1">
-							<a>
+						<div class="col-md-12">					
+							<a href="#">
 								<img src="{{ asset('landingpage_asset/images/_subhausLogo.png') }}">
-							</a>							
-							<a>
+							</a>
+							<a href="#">		
+								<img src="{{ asset('landingpage_asset/images/_fluxLogo.png') }}">
+							</a>		
+							<a href="#">		
+								<img src="{{ asset('landingpage_asset/images/_monroeLogo.png') }}">
+							</a>
+							<br><br>
+							<a href="#">
 								<img src="{{ asset('landingpage_asset/images/_pitstopLogo.png') }}">
 							</a>
-							<a>		
-								<img src="{{ asset('landingpage_asset/images/_fluxLogo.png') }}">
-							</a>
+							
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
 		<!--=== Home Section Ends ===-->
 	</div>
-	
-	
-	<!--=== subhaus section Starts ===-->
-	<section id="section-subhaus" class="subhaus-wrap">
-		<div class="container subhaus center">
+
+	<!--=== aboutus section Starts ===-->
+	<section id="section-aboutus" class="aboutus-wrap">
+		<div class="container aboutus center">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Subhaus Gallery</h1>	
+					<h1>About Us</h1>	
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--=== subhaus section Ends ===-->
-	
-	<!--=== pitstop section Starts ===-->
-	<section id="section-pitstop" class="pitstop-wrap">
-		<div class="container pitstop center">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1>Pitstop Gallery</h1>	
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--=== pitstop section Ends ===-->
+	<!--=== aboutus section Ends ===-->
 		
-	<!--=== flux section Starts ===-->
-	<section id="section-flux" class="section-wrap">
-		<div class="container big-flux center">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1>Flux Gallery</h1>	
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--=== flux section Ends ===-->
-	
-	<!--=== monroe section Starts ===-->
-	<section id="section-monroe" class="monroe-wrap">
-		<div class="container monroe center">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1>Monroe Gallery</h1>	
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--=== monroe section Ends ===-->
-	
 	<!--=== events section Starts ===-->
 	<section id="section-events" class="events-wrap">
 		<div class="container events center">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1>Event</h1>	
+					<h1>Events</h1>	
 				</div>
 			</div>
 		</div>
 	</section>
 	<!--=== events section Ends ===-->
-	
-	
-	<!--=== team section Starts ===-->
-	<section id="section-team" class="team-wrap">
-		<div class="container team center">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1>Our Team</h1>	
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--=== team section Ends ===-->
 	
 	<!--=== location section Starts ===-->
 	<section id="section-location" class="location-wrap">
@@ -218,34 +173,31 @@
 		</div>
 	</div>
 	<!--=== Footer section Ends ===-->
+	
+<!--==== Js files ====-->
+<!--==== Essential files ====-->
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery-1.11.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrapValidator.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/modernizr.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.easing.1.3.js') }}"></script>
 
-	<!--==== Js files ====-->
-	<!--==== Essential files ====-->
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery-1.11.1.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrap.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/bootstrapValidator.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/modernizr.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.easing.1.3.js') }}"></script>
+<!--==== Slider and Card style plugin ====-->
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.baraja.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.vegas.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.bxslider.min.js') }}"></script>
 
-	<!--==== Slider and Card style plugin ====-->
-	<script type="text/javascript" src="js/jquery.baraja.js"></script>
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.vegas.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.bxslider.min.js') }}"></script>
+<!--==== MailChimp Widget plugin ====-->
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.ajaxchimp.min.js') }}"></script>
 
-	<!--==== MailChimp Widget plugin ====-->
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.ajaxchimp.min.js') }}"></script>
-
-	<!--==== Scroll and navigation plugins ====-->
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nicescroll.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nav.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.appear.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.fitvids.js') }}"></script>
-
-	<!--==== Custom Script files ====-->
-	<script type="text/javascript" src="{{ asset('landingpage_asset/js/custom.js') }}"></script>
+<!--==== Scroll and navigation plugins ====-->
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nicescroll.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.nav.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.appear.js') }}"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/jquery.fitvids.js') }}"></script>
 
 <!--==== Custom Script files ====-->
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="{{ asset('landingpage_asset/js/custom.js') }}"></script>
 
 </body>
 </html>
